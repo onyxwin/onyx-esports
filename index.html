@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONYX Esports — Fortnite</title>
+  <meta name="description" content="ONYX Esports — Competitive Fortnite team.">
+  <style>
+    :root{
+      --bg:#07050b; --panel:#100b18; --purple:#b100ff; --purple2:#7b00ff;
+      --text:#f7f2ff; --muted:#aaa0b5; --line:rgba(177,0,255,.22);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,system-ui,Arial,sans-serif;background:radial-gradient(circle at 80% 0%,#30004d 0,transparent 35%),var(--bg);color:var(--text);line-height:1.5}
+    a{color:inherit;text-decoration:none}
+    nav{position:fixed;top:0;left:0;right:0;z-index:10;background:rgba(7,5,11,.78);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .navin{max-width:1100px;margin:auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-weight:1000;letter-spacing:3px;font-size:22px}.logo span{color:var(--purple)}
+    .links{display:flex;gap:24px;color:#d9cfe0;font-size:14px;font-weight:700}
+    .links a:hover{color:var(--purple)}
+    .hero{min-height:100vh;display:grid;place-items:center;text-align:center;padding:120px 20px 70px;position:relative;overflow:hidden}
+    .hero:before{content:"";position:absolute;width:500px;height:500px;border-radius:50%;background:var(--purple);filter:blur(170px);opacity:.18}
+    .eyebrow{color:#d5a5ff;font-weight:900;letter-spacing:4px;font-size:13px}
+    h1{font-size:clamp(64px,15vw,150px);line-height:.85;letter-spacing:-6px;font-weight:1000;margin:22px 0}
+    h1 span{color:var(--purple);text-shadow:0 0 35px rgba(177,0,255,.65)}
+    .hero p{max-width:650px;margin:auto;color:var(--muted);font-size:18px}
+    .buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:32px}
+    .btn{padding:14px 22px;border-radius:10px;font-weight:900;border:1px solid var(--line);background:#160d20}
+    .btn.primary{background:linear-gradient(135deg,var(--purple),var(--purple2));border:0;box-shadow:0 10px 35px rgba(177,0,255,.25)}
+    section{max-width:1100px;margin:auto;padding:90px 24px}
+    .tag{color:var(--purple);font-weight:900;letter-spacing:3px;font-size:12px}
+    h2{font-size:42px;line-height:1.05;margin:10px 0 32px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(177,0,255,.035));border:1px solid var(--line);border-radius:18px;padding:25px;transition:.2s}
+    .card:hover{transform:translateY(-4px);border-color:rgba(177,0,255,.6)}
+    .avatar{width:70px;height:70px;border-radius:14px;background:linear-gradient(135deg,var(--purple),#32005a);display:grid;place-items:center;font-weight:1000;font-size:24px;margin-bottom:18px}
+    .role{color:var(--purple);font-size:12px;font-weight:900;letter-spacing:2px;text-transform:uppercase}
+    .muted{color:var(--muted)}
+    .result{display:flex;justify-content:space-between;align-items:center;gap:20px}
+    .place{font-size:34px;font-weight:1000;color:var(--purple)}
+    .game{font-weight:900}
+    .cta{border-radius:24px;padding:50px;text-align:center;background:linear-gradient(135deg,#260035,#100017);border:1px solid rgba(177,0,255,.4)}
+    footer{border-top:1px solid var(--line);padding:35px 24px;text-align:center;color:#817689}
+    @media(max-width:700px){.links{display:none}.grid{grid-template-columns:1fr}h2{font-size:34px}.cta{padding:32px 20px}}
+  </style>
+</head>
+<body>
+<nav><div class="navin">
+  <a class="logo" href="#">ON<span>Y</span>X</a>
+  <div class="links"><a href="#team">Team</a><a href="#results">Results</a><a href="#fortnite">Fortnite</a><a href="#contact">Contact</a></div>
+</div></nav>
+
+<header class="hero">
+  <div>
+    <div class="eyebrow">FORTNITE • COMPETITIVE • ESPORTS</div>
+    <h1>ON<span>YX</span></h1>
+    <p>Non siamo qui per partecipare. Siamo qui per competere. Benvenuto nella casa di ONYX Esports.</p>
+    <div class="buttons">
+      <a class="btn primary" href="#team">SCOPRI IL TEAM</a>
+      <a class="btn" href="#contact">CONTATTACI</a>
+    </div>
+  </div>
+</header>
+
+<section id="fortnite">
+  <div class="tag">OUR GAME</div><h2>Fortnite, ma al livello successivo.</h2>
+  <p class="muted">ONYX nasce con un obiettivo semplice: costruire un team competitivo, riconoscibile e pronto a lasciare il segno nei tornei.</p>
+</section>
+
+<section id="team">
+  <div class="tag">ROSTER</div><h2>Il nostro team</h2>
+  <div class="grid">
+    <article class="card"><div class="avatar">P1</div><div class="role">Player</div><h3>PLAYER ONE</h3><p class="muted">Fortnite Competitive</p></article>
+    <article class="card"><div class="avatar">P2</div><div class="role">Player</div><h3>PLAYER TWO</h3><p class="muted">Fortnite Competitive</p></article>
+    <article class="card"><div class="avatar">P3</div><div class="role">Player</div><h3>PLAYER THREE</h3><p class="muted">Fortnite Competitive</p></article>
+  </div>
+</section>
+
+<section id="results">
+  <div class="tag">RESULTS</div><h2>Risultati recenti</h2>
+  <div class="grid">
+    <div class="card result"><div><div class="game">Fortnite Cup</div><div class="muted">Online Tournament</div></div><div class="place">#1</div></div>
+    <div class="card result"><div><div class="game">Elite Series</div><div class="muted">Competitive</div></div><div class="place">#3</div></div>
+    <div class="card result"><div><div class="game">Weekly Finals</div><div class="muted">Fortnite</div></div><div class="place">#5</div></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="cta">
+    <div class="tag">JOIN ONYX</div>
+    <h2>Pronto a giocare?</h2>
+    <p class="muted">Segui ONYX sui social e resta aggiornato su roster, tornei e nuovi annunci.</p>
+    <div class="buttons">
+      <a class="btn primary" href="#">DISCORD</a>
+      <a class="btn" href="#">INSTAGRAM</a>
+      <a class="btn" href="#">TIKTOK</a>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 ONYX Esports — Fortnite Competitive</footer>
+</body>
+</html>
