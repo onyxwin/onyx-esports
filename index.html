@@ -43,7 +43,90 @@
     .cta{border-radius:24px;padding:50px;text-align:center;background:linear-gradient(135deg,#260035,#100017);border:1px solid rgba(177,0,255,.4)}
     footer{border-top:1px solid var(--line);padding:35px 24px;text-align:center;color:#817689}
     @media(max-width:700px){.links{display:none}.grid{grid-template-columns:1fr}h2{font-size:34px}.cta{padding:32px 20px}}
-  </style>
+ /* ONYX MERCH */
+
+.merch-section {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.merch-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.merch-title h2 {
+    font-size: 48px;
+    margin: 0 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.merch-title p {
+    color: var(--muted);
+    font-size: 18px;
+}
+
+.merch-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    background: linear-gradient(145deg, #120c20, #09070d);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 24px;
+    padding: 30px;
+}
+
+.merch-image {
+    width: 100%;
+    border-radius: 18px;
+    display: block;
+}
+
+.merch-info h3 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.merch-description {
+    color: var(--muted);
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+.merch-price {
+    font-size: 30px;
+    font-weight: 800;
+    margin: 25px 0;
+}
+
+.merch-button {
+    display: inline-block;
+    padding: 15px 28px;
+    border-radius: 12px;
+    background: #7c3aed;
+    color: white;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    .merch-card {
+        grid-template-columns: 1fr;
+        padding: 18px;
+    }
+
+    .merch-title h2 {
+        font-size: 36px;
+    }
+
+    .merch-button {
+        display: block;
+        text-align: center;
+    }
+    } </style>
 </head>
 <body>
 <nav><div class="navin">
